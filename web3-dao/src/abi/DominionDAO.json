@@ -1,0 +1,99 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "contribute",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "title", "type": "string" },
+        { "internalType": "string", "name": "description", "type": "string" },
+        { "internalType": "address payable", "name": "beneficiary", "type": "address" },
+        { "internalType": "uint256", "name": "amount", "type": "uint256" }
+      ],
+      "name": "createProposal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256", "name": "id", "type": "uint256" },
+        { "internalType": "bool", "name": "support", "type": "bool" }
+      ],
+      "name": "performVote",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256", "name": "id", "type": "uint256" }
+      ],
+      "name": "payBeneficiary",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "daoBalance",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proposalCount",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+      "name": "contributions",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+      "name": "isStakeholder",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256", "name": "", "type": "uint256" },
+        { "internalType": "address", "name": "", "type": "address" }
+      ],
+      "name": "hasVoted",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "name": "proposals",
+      "outputs": [
+        { "internalType": "uint256", "name": "id", "type": "uint256" },
+        { "internalType": "string", "name": "title", "type": "string" },
+        { "internalType": "string", "name": "description", "type": "string" },
+        { "internalType": "address payable", "name": "beneficiary", "type": "address" },
+        { "internalType": "uint256", "name": "amount", "type": "uint256" },
+        { "internalType": "uint256", "name": "upvotes", "type": "uint256" },
+        { "internalType": "uint256", "name": "downvotes", "type": "uint256" },
+        { "internalType": "bool", "name": "paid", "type": "bool" },
+        { "internalType": "address", "name": "proposer", "type": "address" },
+        { "internalType": "uint256", "name": "deadline", "type": "uint256" },
+        { "internalType": "address", "name": "executor", "type": "address" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
